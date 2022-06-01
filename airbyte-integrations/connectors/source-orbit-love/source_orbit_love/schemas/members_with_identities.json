@@ -1,0 +1,190 @@
+{
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "activities_count": {
+      "type": "integer"
+    },
+    "activities_score": {
+      "type": "number"
+    },
+    "avatar_url": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "deleted_at": {
+      "type": "string"
+    },
+    "first_activity_occurred_at": {
+      "type": "string"
+    },
+    "last_activity_occurred_at": {
+      "type": "string"
+    },
+    "reach": {
+      "type": "number"
+    },
+    "source": "api",
+    "updated_at": {
+      "type": "string"
+    },
+    "merged_at": {
+      "type": "string"
+    },
+    "orbit_url": {
+      "type": "string"
+    },
+    "created": {
+      "type": "boolean"
+    },
+    "orbit_level": {
+      "type": "number"
+    },
+    "love": {
+      "type": "number"
+    },
+    "discourse": {
+      "type": "string"
+    },
+    "discord": {
+      "type": "string"
+    },
+    "github_followers": {
+      "type": "integer"
+    },
+    "twitter_followers": {
+      "type": "integer"
+    },
+    "topics": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "languages": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "bio": {
+      "type": "string"
+    },
+    "birthday": {
+      "type": "string"
+    },
+    "company": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "pronouns": {
+      "type": "string"
+    },
+    "shipping_address": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "tag_list": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "tshirt": {
+      "type": "string"
+    },
+    "teammate": {
+      "type": "boolean"
+    },
+    "url": {
+      "type": "string"
+    },
+    "github": {
+      "type": "string",
+      "description": "The member's GitHub username"
+    },
+    "twitter": {
+      "type": "string",
+      "description": "The member's Twitter username"
+    },
+    "email": {
+      "type": "string",
+      "description": "The member's email"
+    },
+    "linkedin": {
+      "type": "string",
+      "description": "The member's LinkedIn username, without the in/ or pub/"
+    },
+    "devto": {
+      "type": "string",
+      "description": "The member's dev.to username"
+    },
+    "identities": {
+      "type": "array",
+      "description": "All the member's known identities",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "source"
+        ],
+        "description": "Represents an email address, a profile on networks like github and twitter, or a record in another system.",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string",
+            "description": "The name of the person in the source system"
+          },
+          "source": {
+            "type": "string",
+            "description": "The type of source: known values include github, twitter, discourse, email, linkedin, devto. Custom values can also be used"
+          },
+          "source_host": {
+            "type": "string",
+            "description": "Specifies the location of the source, such as the host of a Discourse instance"
+          },
+          "username": {
+            "type": "string",
+            "description": "The username of the person in the source system"
+          },
+          "uid": {
+            "type": "string",
+            "description": "The uid of the person in the source system"
+          },
+          "email": {
+            "type": "string",
+            "description": "The email of the person in the source system"
+          },
+          "url": {
+            "type": "string",
+            "description": "For custom identities, an optional link to the profile on the source system"
+          }
+        }
+      }
+    }
+  },
+  "$schema": "http://json-schema.org/schema#"
+}
+
